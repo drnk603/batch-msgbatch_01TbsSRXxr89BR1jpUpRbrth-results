@@ -20,23 +20,23 @@
 
     const VALIDATORS = {
         name: {
-            pattern: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
+            pattern: /^[a-zA-ZÀ-ÿ\s\-']{2,50}$/,
             message: 'Name muss 2-50 Zeichen enthalten und darf nur Buchstaben, Leerzeichen, Bindestriche und Apostrophe enthalten'
         },
         firstName: {
-            pattern: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
+            pattern: /^[a-zA-ZÀ-ÿ\s\-']{2,50}$/,
             message: 'Vorname muss 2-50 Zeichen enthalten'
         },
         lastName: {
-            pattern: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
+            pattern: /^[a-zA-ZÀ-ÿ\s\-']{2,50}$/,
             message: 'Nachname muss 2-50 Zeichen enthalten'
         },
         email: {
-            pattern: /^[^s@]+@[^s@]+.[^s@]+$/,
+            pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
             message: 'Bitte geben Sie eine gültige E-Mail-Adresse ein'
         },
         phone: {
-            pattern: /^[ds+-()]{10,20}$/,
+            pattern: /^[\d\s+\-()]{10,20}$/,
             message: 'Telefonnummer muss 10-20 Zeichen enthalten'
         },
         message: {

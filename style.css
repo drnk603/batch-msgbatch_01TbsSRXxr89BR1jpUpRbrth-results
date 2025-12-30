@@ -667,9 +667,7 @@ section {
   background-color: var(--color-bg-light);
 }
 
-.bg-dark {
-  background-color: var(--color-bg-dark);
-}
+
 
 .bg-white {
   background-color: var(--color-bg-white);
@@ -1432,4 +1430,26 @@ address a {
 
 [data-aos] {
   transition-property: transform, opacity;
+}
+
+/* AUTO-FIX: bg-dark improved contrast */
+.bg-dark > * {
+  color:white!important;
+}
+
+/* AUTO-INJECTED: g-4 layout fix */
+.g-4 > * {
+  width: 100%;
+}
+
+/* --- AUTO-INJECTED: AOS mobile/tablet override --- */
+@media (max-width: 1024px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+  .c-logo__img {
+    display: none!important;
+  }
 }
